@@ -26,7 +26,10 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://genz-bank-frontend.vercel.app"
+})
 
 public class AuthController {
 

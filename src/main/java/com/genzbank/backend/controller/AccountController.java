@@ -27,7 +27,10 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/accounts")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://genz-bank-frontend.vercel.app"
+})
 public class AccountController {
 
     private final AccountService accountService;
